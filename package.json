@@ -1,0 +1,32 @@
+{
+  "name": "helsinki-uni-course-part-3",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/ben-brunner/helsinki-uni-course-part-3#readme",
+  "bugs": {
+    "url": "https://github.com/ben-brunner/helsinki-uni-course-part-3/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ben-brunner/helsinki-uni-course-part-3.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ui": "rm -rf dist && cd /Users/benjamin/Desktop/Code/helsinki-fullstack-course/part2/phonebook && npm run build && cp -r dist /Users/benjamin/Desktop/Code/helsinki-uni-course-part-3",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
